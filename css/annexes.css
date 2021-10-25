@@ -87,6 +87,16 @@ header h4{
     width: 80%;
 }
 
+.blocs .code-final-1{
+    width: 50%;
+    height: 800px;
+}
+
+.blocs .code-final-2{
+    width: 50%;
+    height: 800px;
+}
+
 .blocs img{
     position: relative;
     left: 350px;
