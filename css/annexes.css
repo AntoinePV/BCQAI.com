@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0; padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #D2D6EF;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #0F5257;
+    padding-bottom: 15px;
+
+}
+
+nav h1 {
+    color: #554348;
+    font-family: 'Playfair Display', sans-serif ;
+    font-size: 30px;
+    padding: 3px;
+    margin-right: 300px;
+}
+
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px;
+    
+}
+
+nav .onglets a{
+    text-decoration: none;
+    color: #554348;
+    margin-right: 10px;
+    border-bottom: 1px solid #554348;
+    padding-bottom: 5px;
+
+}
+
+header{
+    display: flex; /* Aligne les éléments */
+    flex-direction: column; /* Empiles les éléments en colonne */
+    align-items: center; /* Centre les éléments dans le bloc parent */
+    background-image: url('../img/background_header.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 40px;
+}
+
+header h1{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 50px;
+}
+
+header h4{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+.main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    
+}
+
+.blocs h4{
+    width: 100%;
+    text-align: center;
+    margin: 30px;
+}
+
+.blocs{
+    padding: 20px;
+    margin: 50px 0px;
+    background-color: #C5D1EB;
+    width: 80%;
+}
+
+.blocs img{
+    position: relative;
+    left: 350px;
+
+}
+
+footer{
+    margin-top: 40px;
+    border-top: 5px solid #0F5257;
+    background-color: #C5D1EB;
+    padding: 30px 100px;
+} 
+
+footer h1{
+font-family: 'Playfair Display', sans-serif;
+width: 20%;
+padding-bottom: 5px;
+text-decoration: underline 2px solid black;
+}
+
+footer .services{
+margin-top: -10px;
+display: flex;
+flex-wrap: wrap;
+}
+
+footer .services .service{
+margin-right: 30px;
+padding: 10px;
+}
+
+footer .services .service p{
+max-width: 380px;
+}
+
+@media screen and (max-width: 1025px){
+nav{
+    display: flex;
+    flex-direction: column;
+}
+nav h1{
+    margin-right: 0;
+}
+nav .onglets{
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.main .intro{
+    margin: 10px;
+}
+
+.main .content .intro .right img{
+    height: 200px; width: 100%;
+    margin-top: 0px;
+}
+
+.main .content .intro{
+    display: block;
+}
+
+footer{
+    padding: 30px;
+}
+
+footer h1{
+    width: auto;
+}
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/balise.css">
+	<title>Balise de Contrôle de la Qualité de l'Air Intérieur</title>
+</head>
+
+<body>
+	<nav>
+		<h1>BCQAI</h1>
+		<div class="onglets">
+			<a href="index.html">Accueil</a>
+			<a href="le projet.html">Le Projet</a>
+			<a href="la balise.html">La Balise</a>
+			<a href="annexes.html">Annexes</a>
+		</div>
+	</nav>
+
+	<header>
+		<h1>BCQAI</h1>
+		<h4>Balise de Contrôle de la Qualité de l'Air Intérieur</h4>
+	</header>
+
+    <section class="main">
+        <h1> La Balise </h1>
+        <p>
+            Sur cette page, vous allez découvrir comment est fabriquée 
+            la balise du projet. Plus d'informations sont précisées dans le 
+            <a href="Docs/Rapport Final.pdf" class="lien-rapport" target="_blank">rapport du projet</a>. 
+            Vous pourrez ainsi la reproduire chez vous, Do It Yourself (DIY) !
+            <br> <br>
+            Voici les étapes à suivre :
+        </p>
+
+        <article class="carte-elec">
+            <h3> Sélection de la carte électronique </h3>
+            <div class="body-carte-elec">
+                <p class="text-carte-elec">
+                    Le choix de la carte c’est porté sur une carte de la plate-forme électronique open source Arduino. 
+                    Grâce à son expérience utilisateur simple et accessible, le logiciel Arduino est simple d’utilisation 
+                    pour les débutants mais suffisamment modulable pour les plus expérimentés. Ainsi le modèle retenu est 
+                    la carte Arduino Uno.
+                </p>
+
+                <img src="img/carte_arduino_uno.png" alt="La carte Arduino Uno" class="image-carte-elec">
+            </div>
+        </article>
+
+        <article class="capteurs">
+            <h3> Sélection des capteurs </h3>
+            <div class="body-capteurs">
+                <p class="text-capteurs">
+                    Voici les différents capteurs qu’il faut se procurer pour l’assemblage de la balise ainsi que leur prix, tous 
+                    les capteurs ont été commandés sur le site de 
+                    <a href="https://www.gotronic.fr/" class="lien-gotronic" target="_blank">Gotronic</a> :
+                </p>
+
+                <img src="img/tableau_capteurs.png" alt="" class="tableau-capteurs">
+            </div>
+        </article>
+
+        <article class="assemblage">
+            <h3> Assemblage des capteurs </h3>
+            <p>Tous les codes utilisés sont présents en <a href="annexes.html" target="_blank">annexes</a>.</p>
+
+            <div class="body-assemblage">
+                <div class="capteur-1">
+                    <h4>Le capetur de température et d'humidité Gravity DFR0066</h4>
+                    
+                    <img src="img/temp_hum_capteur.jpg" alt="Capteur de température et d'humidité" class="img-temp-hum-capteur">
+
+                    <p class="text-capteur-1">
+                        Il s’agit d’un capteur digital de température et d’humidité basé sur un SHT1x et permettant de mesurer 
+                        la température ambiante entre -40°C et +128°C et l’humidité via deux sorties indépendantes.
+                        <br> <br>
+                        Voici le montage sur la carte Arduino Uno utilisé pour ce capteur :
+                    </p>
+
+                    <img src="img/montage_capteur_temp_hum.PNG" alt="Montage du capteur de température & d'humidité" class="img-montage-temp-hum-capteur">
+
+                    <p class="text-annexe">Le code est disponible en <a href="annexes.html#annexe-1" target="_blank">Annexe 1</a>.</p>
+
+                </div>
+
+                <div class="capteur-2">
+                    <h4>Le capteur de Gaz HCHO Gravity SEN0231</h4>
+                    
+                    <img src="img/capteur_hcho.jpg" alt="Capteur de température et d'humidité" class="img-hcho-capteur">
+
+                    <p class="text-capteur-2">
+                        Il s’agit d’un capteur digital de température et d’humidité basé sur un SHT1x et permettant de mesurer 
+                        la température ambiante entre -40°C et +128°C et l’humidité via deux sorties indépendantes.
+                        <br> <br>
+                        Voici le montage sur la carte Arduino Uno utilisé pour ce capteur :
+                    </p>
+
+                    <img src="img/montage_capteur_HCHO.PNG" alt="Montage du capteur de gaz HCHO" class="img-montage-hcho-capteur">
+
+                    <p class="text-annexe">Le code est disponible en <a href="annexes.html#annexe-2"  target="_blank">Annexe 2</a>.</p>
+
+                </div>
+
+                <div class="capteur-3">
+                    <h4>Le capteur de CO2 infrarouge Gravity SEN0219</h4>
+                    
+                    <img src="img/capteur_CO2.png" alt="Capteur de CO2" class="img-CO2-capteur">
+
+                    <p class="text-capteur-3">
+                        Le module est composé d’un capteur de CO2 infrarouge et d’une carte d’interface analogique. Ce module mesure le CO2 
+                        avec une grande sensibilité et une excellente linéarité.
+                        <br> <br>
+                        Voici le montage sur la carte Arduino Uno utilisé pour ce capteur :
+                    </p>
+
+                    <img src="img/montage_capteur_CO2.png" alt="Montage du capteur de CO2" class="img-montage-capteur-CO2">
+
+                    <p class="text-annexe">Le code est disponible en <a href="annexes.html#annexe-3" target="_blank">Annexe 3</a>.</p>
+
+                </div>
+
+                <div class="capteur-4">
+                    <h4>Le capteur de CO2 infrarouge Gravity SEN0219</h4>
+                    
+                    <img src="img/capteur_poussière.png" alt="Capteur de poussière" class="img-capteur-poussière">
+
+                    <p class="text-capteur-4">
+                        Ce module permet de mesurer la quantité de particules présentes dans l’air sur 3 calibres (0,3 à 1 μm - 1 à 2,5 μm - 2,5 à 10 μm).
+                        <br> <br>
+                        Voici le montage sur la carte Arduino Uno utilisé pour ce capteur, le capteur est fourni avec un adaptateur que l’on peut voir 
+                        ci-dessous :
+                    </p>
+
+                    <img src="img/montage_capteur_poussière.png" alt="Montage du capteur de poussière" class="img-montage-capteur-poussière">
+
+                    <p class="text-annexe">Le code est disponible en <a href="annexes.html#annexe-4" target="_blank">Annexe 4</a>.</p>
+                </div>
+
+                <div class="montage-final">
+                    <h4>L'assemblage final des capteurs sur la carte </h4>
+
+                    <p class="text-montage-final">
+                        Après avoir testé tous les capteurs individuellement, il est temps de rassembler leurs codes pour les faire fonctionner simultanément.
+                        <br> <br>
+                        Voici le montage sur la carte Arduino Uno utilisé pour ce capteur, le capteur est fourni avec un adaptateur que l’on peut voir 
+                        ci-dessous :
+                    </p>
+                    
+                    <img src="img/montage_final.png" alt="Montage final des capteurs sur la carte" class="img-montage-final">
+
+                    <p class="text-annexe">Le code est disponible en <a href="annexes.html#annexe-5" target="_blank">Annexe 5</a>.</p>
+                    <p class="tuto">Il ne vous reste plus qu'à brancher votre carte à votre ordinateur et incrémenter vos codes ! Vous pouvez suivre 
+                        ce <a href="https://www.arduino.cc/en/Guide" target="_blank">tutoriel</a> si nécessaire ! Bravo !</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+		<h1> A propos </h1>
+
+		<div class="services">
+			<div class="service">
+				<h3> Qui sommes-nous ? </h3>
+				<p>Nous sommes Gabriel Fouquet et Antoine Pidoux-Vidal, deux étudiants en 4ème année d’école d’ingénieur à l’ESIEE Paris, 
+					nous avons repris le projet de nos camarades afin d’y apporter des améliorations. </p>
+			</div>
+			<div class="service">
+				<h3> Remerciements </h3>
+				<p>Nous remercions l'ESIEE Paris pour nous avoir permis de réaliser ce projet, ainsi que Mme E. Algre, professeur associé et 
+					co-responsable de la filière par apprentissage Énergie - Ingénierie de la Transition Énergétique, pour son suivi et ses 
+					conseils avisés !</p>
+			</div>
+			<div class="service">
+				<h3> Nous contacter :</h3>
+				<p> Fouquet Gabriel : <a href="mailto:gabriel.fouquet@edu.esiee.fr"> gabriel.fouquet@edu.esiee.fr</a> .</p>
+				<br>
+				<p> Pidoux-Vidal Antoine :<a href="mailto:antoine.pidoux-vidal@edu.esiee.fr"> antoine.pidoux-vidal@edu.esiee.fr</a> .</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

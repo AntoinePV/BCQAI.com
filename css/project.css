@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@700&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0; padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #D2D6EF;
+}
+
+
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid #0F5257;
+  padding-bottom: 15px;
+
+}
+
+nav h1 {
+  color: #554348;
+  font-family: 'Playfair Display', sans-serif ;
+  font-size: 30px;
+  padding: 3px;
+  margin-right: 300px;
+}
+
+nav .onglets{
+  margin-top: 3px;
+  margin-left: 300px;
+  
+}
+
+nav .onglets a{
+  text-decoration: none;
+  color: #554348;
+  margin-right: 10px;
+  border-bottom: 1px solid #554348;
+  padding-bottom: 5px;
+
+}
+
+header{
+  display: flex; /* Aligne les éléments */
+  flex-direction: column; /* Empiles les éléments en colonne */
+  align-items: center; /* Centre les éléments dans le bloc parent */
+  background-image: url('../img/background_header.jpg');
+  background-size: cover;
+  color: #fff;
+  padding: 40px;
+}
+
+header h1{
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 50px;
+}
+
+header h4{
+  font-family: 'Montserrat', sans-serif;
+  margin-top: -20px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 2px solid white;
+}
+
+.main{
+  margin-top: 40px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main h1{
+  color: #554348;
+  padding: 10px 5px 5px 5px;
+  border-bottom: 2px solid #554348;
+}
+
+/* div.content{
+    border: 4px solid blue;
+} */
+
+.main .content .intro{
+    padding : 1% 2%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3%;
+    justify-content: space-evenly;
+    /* border: 4px solid orange; */
+}
+
+.main .content .intro .right{
+  flex: 0 0 30%; 
+  padding: 10px 20px 20px 20px;
+  background-color: #C5D1EB;
+  /* border : 3px dotted red */
+}
+
+.main .content .intro .left img{
+  width: 700px; height: 450px;
+  opacity: 0.85;
+  border-radius: 5%;
+}
+
+div.presentation-projet p{
+  text-indent: 40px;
+}
+
+.main .content .intro .left img:hover{
+  box-shadow: -8px 8px 10px #0F5257;
+  transition: 0.4s;
+}
+div.CDC{
+    padding: 0% 2% 2% 2%;
+    background-color: #C5D1EB;
+    width: 80%;
+    /* border: 2px solid #0F5257; */
+}
+
+div.CDC p{
+  text-indent: 40px;
+}
+
+div.CDC h1{
+  text-align: center;
+  font-size: 25px;
+}
+
+/* .Résultats_Attendus{
+  border: 4px solid saddlebrown;
+} */
+
+li{
+  list-style-image: url("../img/icon_liste_CDC.png");
+  list-style-position: inside;
+  text-align:justify;
+}
+
+.download{
+  margin: 5px 0px;
+  text-align:center;
+  /* border: 2px solid purple; */
+}
+
+.button{
+  font-size: 18px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #D2D6EF;
+  padding: 7px;
+  border-radius: 5px;
+  border: 2px solid #0F5257;
+  text-decoration: none;
+  color: #554348;
+  transition-duration: 00.4s;
+}
+
+.button:hover{
+  background-color: #fff;
+}
+
+div.apports_projet{
+  padding: 0 2%;
+  background-color: #C5D1EB;
+  width: 80%;
+  /* border: 2px solid #0F5257; */
+}
+
+div.apports_projet p{
+  text-indent: 40px;
+}
+
+div.apports_projet h1{
+  text-align: center;
+  font-size: 25px;
+}
+
+div.tech_transfert{
+  align-items: center;
+  /* border: 4px dotted green; */
+  padding-bottom: 30px;
+}
+
+.graph{
+  width:650px; height: 400px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 20px;
+  /* box-shadow: 8px 8px 6px #0F5257; */
+}
+
+.graph:hover{
+  box-shadow: 8px 8px 10px #0F5257;
+  transition: 0.5s;
+}
+div.design{
+  
+  /* border: 4px dotted green; */
+  margin: 35px 0px 35px 0px;
+  padding-bottom: 20px;
+}
+
+div.description{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.design .description .image_enveloppe{
+  margin-left: 10px;
+  margin-top: 20px;
+  width: 500px; height: 300px; 
+  /* border: 3px dotted red; */
+}
+
+div.design .description .text_description{
+  flex : 0 0  45%;
+  /* border: 4px dotted yellowgreen; */
+  margin : 70px 10px 10px 50px;
+  height: 152px;
+}
+
+div.site_projet{
+  /* border: 4px dotted green; */
+  margin-bottom: 20px;
+  
+}
+
+div.site_projet .description{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  /* border: 4px solid pink; */
+}
+
+div.site_projet .description .icon_developer{
+  width: 450px; height: 330px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 6px #0F5257;
+  margin-top: 0;
+}
+
+div.site_projet .description p{
+  height: 150px;
+  padding: 5px 10px;
+  margin: 90px 50px 0px 0px; 
+  width: 50%;
+}
+
+footer{
+    margin-top: 40px;
+    border-top: 5px solid #0F5257;
+    background-color: #C5D1EB;
+    padding: 30px 100px;
+}
+  
+footer h1{
+font-family: 'Playfair Display', sans-serif;
+width: 20%;
+padding-bottom: 5px;
+text-decoration: underline 2px solid black;
+}
+
+footer .services{
+margin-top: -10px;
+display: flex;
+flex-wrap: wrap;
+}
+
+footer .services .service{
+margin-right: 30px;
+padding: 10px;
+}
+
+footer .services .service p{
+max-width: 380px;
+}
+
+@media screen and (max-width: 1025px){
+nav{
+    display: flex;
+    flex-direction: column;
+}
+nav h1{
+    margin-right: 0;
+}
+nav .onglets{
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.main .intro{
+    margin: 10px;
+}
+
+.main .content .intro{
+    display: block;
+}
+
+footer{
+    padding: 30px;
+}
+
+footer h1{
+    width: auto;
+}
+}
